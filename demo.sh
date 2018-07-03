@@ -31,8 +31,8 @@ portal_url=http://localhost:8070
 
 # JAVA OPTS
 BASE_JAVA_OPTS="-Denv=dev -Ddev_meta=$config_server_url" 
-SERVER_JAVA_OPTS="$BASE_JAVA_OPTS -Dspring.profiles.active=github -Deureka.service.url=$eureka_service_url"
-PORTAL_JAVA_OPTS="$BASE_JAVA_OPTS -Dspring.profiles.active=github,auth -Deureka.instance.homePageUrl=http://172.16.8.32:9998"
+SERVER_JAVA_OPTS="$BASE_JAVA_OPTS -Dspring.profiles.active=github -Deureka.service.url=$eureka_service_url -Deureka.instance.homePageUrl=http://172.16.8.32:9998"
+PORTAL_JAVA_OPTS="$BASE_JAVA_OPTS -Dspring.profiles.active=github,auth"
 
 # executable
 JAR_FILE=apollo-all-in-one.jar
