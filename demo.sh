@@ -25,7 +25,6 @@ fi
 # meta server url
 config_server_url=http://localhost:8080
 admin_server_url=http://localhost:8090
-mainip=172.16.8.32
 eureka_service_url=$config_server_url/eureka/
 portal_url=http://localhost:8070
 
