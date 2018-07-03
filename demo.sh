@@ -28,11 +28,12 @@ fi
 config_server_url=http://172.16.8.32:9998
 admin_server_url=http://172.16.8.32:9996
 portal_url=http://172.16.8.32:9997
+mainip=http://172.16.8.32
 eureka_service_url=$config_server_url/eureka/
 # portal_url=http://localhost:8070
 
 # JAVA OPTS
-BASE_JAVA_OPTS="-Denv=dev -Ddev_meta=$config_server_url"
+BASE_JAVA_OPTS="-Denv=dev -Ddev_meta=$config_server_url -Deureka.instance.ip-address=$mainip -Deureka.instance.homePageUrl=$config_server_url" 
 SERVER_JAVA_OPTS="$BASE_JAVA_OPTS -Dspring.profiles.active=github -Deureka.service.url=$eureka_service_url"
 PORTAL_JAVA_OPTS="$BASE_JAVA_OPTS -Dspring.profiles.active=github,auth"
 
