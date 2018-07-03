@@ -2,13 +2,13 @@
 
 # apollo config db info
 apollo_config_db_url=jdbc:mysql://mdmdbtest.fastfish.com:3306/ApolloConfigDB?characterEncoding=utf8
-apollo_config_db_username=root
-apollo_config_db_password=
+apollo_config_db_username=apollo
+apollo_config_db_password=apollo
 
 # apollo portal db info
 apollo_portal_db_url=jdbc:mysql://mdmdbtest.fastfish.com:3306/ApolloPortalDB?characterEncoding=utf8
-apollo_portal_db_username=root
-apollo_portal_db_password=
+apollo_portal_db_username=apollo
+apollo_portal_db_password=apollo
 
 # =============== Please do not modify the following content =============== #
 
