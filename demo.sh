@@ -30,7 +30,7 @@ portal_url=http://localhost:8070
 
 # JAVA OPTS
 BASE_JAVA_OPTS="-Denv=dev -Ddev_meta=$config_server_url" 
-SERVER_JAVA_OPTS="$BASE_JAVA_OPTS -Dspring.profiles.active=github -Deureka.service.url=$eureka_service_url"
+SERVER_JAVA_OPTS="$BASE_JAVA_OPTS -Deureka.instance.homePageUrl=http://172.16.8.78:9998/ -Dspring.profiles.active=github -Deureka.service.url=$eureka_service_url"
 PORTAL_JAVA_OPTS="$BASE_JAVA_OPTS -Dspring.profiles.active=github,auth"
 
 # executable
