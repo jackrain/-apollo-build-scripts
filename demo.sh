@@ -27,7 +27,7 @@ config_server_url=http://localhost:8080
 admin_server_url=http://localhost:8090
 eureka_service_url=$config_server_url/eureka/
 portal_url=http://localhost:8070
-mainip=172.16.8.78
+mainip=172.16.0.100
 
 # JAVA OPTS
 BASE_JAVA_OPTS="-Denv=dev -Ddev_meta=$config_server_url" 
