@@ -23,7 +23,7 @@ else
 fi
 
 # meta server url
-config_server_url=http://localhost:9091
+config_server_url=http://localhost:9095
 admin_server_url=http://localhost:8090
 eureka_service_url=$config_server_url/eureka/
 portal_url=http://localhost:8070
