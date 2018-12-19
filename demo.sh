@@ -31,7 +31,7 @@ mainip=10.0.61.15
 
 # JAVA OPTS
 BASE_JAVA_OPTS="-Denv=dev -Ddev_meta=$config_server_url" 
-SERVER_JAVA_OPTS="$BASE_JAVA_OPTS -Deureka.instance.ip-address=$mainip -Dspring.profiles.active=github -Deureka.service.url=$eureka_service_url"
+SERVER_JAVA_OPTS="$BASE_JAVA_OPTS -Deureka.instance.ip-address=47.99.94.15 -Dspring.profiles.active=github -Deureka.service.url=$eureka_service_url"
 PORTAL_JAVA_OPTS="$BASE_JAVA_OPTS -Dspring.profiles.active=github,auth"
 
 # executable
